@@ -1,4 +1,0 @@
-interface:
-  display_name: "Receiving Code Review"
-  short_description: "Evaluate review feedback with technical rigor instead of blind agreement"
-  default_prompt: "Use $receiving-code-review to verify each reviewer comment against the codebase and respond with technical reasoning, not reflexive acceptance."

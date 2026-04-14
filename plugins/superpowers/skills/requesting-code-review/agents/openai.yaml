@@ -1,4 +1,0 @@
-interface:
-  display_name: "Requesting Code Review"
-  short_description: "Dispatch a focused review subagent to catch issues before they cascade"
-  default_prompt: "Use $requesting-code-review after completing a task or feature to get a structured review of the diff before moving on."

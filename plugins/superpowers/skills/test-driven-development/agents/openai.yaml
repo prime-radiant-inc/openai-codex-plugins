@@ -1,4 +1,0 @@
-interface:
-  display_name: "Test-Driven Development"
-  short_description: "Write tests first, watch them fail, then implement to pass"
-  default_prompt: "Use $test-driven-development to enforce a red-green-refactor loop on this feature or bugfix before touching implementation code."

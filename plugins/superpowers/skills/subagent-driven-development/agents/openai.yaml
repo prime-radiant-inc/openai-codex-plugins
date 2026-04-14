@@ -1,4 +1,0 @@
-interface:
-  display_name: "Subagent-Driven Development"
-  short_description: "Execute a plan by dispatching a fresh subagent per task with review gates"
-  default_prompt: "Use $subagent-driven-development to implement an approved plan by delegating each independent task to a focused subagent."

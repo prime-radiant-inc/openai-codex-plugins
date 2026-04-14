@@ -1,4 +1,0 @@
-interface:
-  display_name: "Using Superpowers"
-  short_description: "Discover and invoke the right skills at the start of every conversation"
-  default_prompt: "Use $using-superpowers at the start of any conversation to find the skills that apply and invoke them before responding."

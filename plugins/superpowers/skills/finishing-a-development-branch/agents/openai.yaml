@@ -1,4 +1,0 @@
-interface:
-  display_name: "Finishing a Development Branch"
-  short_description: "Verify, integrate, and clean up completed development work"
-  default_prompt: "Use $finishing-a-development-branch to verify tests, choose between merge or PR, and land completed work cleanly."

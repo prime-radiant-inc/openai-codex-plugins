@@ -1,4 +1,0 @@
-interface:
-  display_name: "Executing Plans"
-  short_description: "Execute a written implementation plan task-by-task with review checkpoints"
-  default_prompt: "Use $executing-plans to load an approved plan, work through each task in order, and verify as you go."
