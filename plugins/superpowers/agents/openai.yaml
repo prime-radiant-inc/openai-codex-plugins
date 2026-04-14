@@ -1,6 +1,4 @@
 interface:
   display_name: "Superpowers"
   short_description: "Planning, TDD, debugging, and delivery workflows for coding agents"
-  icon_small: "./assets/superpowers-small.svg"
-  icon_large: "./assets/superpowers-logo.svg"
   default_prompt: "Use Superpowers to brainstorm a design, write an implementation plan, run test-driven development, debug bugs systematically, or finish and ship a development branch."

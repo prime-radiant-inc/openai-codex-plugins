@@ -19,7 +19,6 @@
     "workflow"
   ],
   "skills": "./skills/",
-  "hooks": "./hooks.json",
   "interface": {
     "displayName": "Superpowers",
     "shortDescription": "Planning, TDD, debugging, and delivery workflows for coding agents",
@@ -40,8 +39,6 @@
       "Turn this approved design into an implementation plan"
     ],
     "brandColor": "#F59E0B",
-    "composerIcon": "./assets/superpowers-small.svg",
-    "logo": "./assets/superpowers-logo.svg",
     "screenshots": []
   }
 }
