@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brainstorming"
+  short_description: "Turn ideas into approved designs through collaborative dialogue"
+  default_prompt: "Use $brainstorming to explore intent, surface requirements, and get a design approved before writing any implementation code."

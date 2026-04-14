@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Skills"
+  short_description: "Author and verify reusable skill documents using TDD for process docs"
+  default_prompt: "Use $writing-skills when creating or revising a skill, applying a red-green-refactor loop to the skill document itself."
