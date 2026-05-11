@@ -1,6 +1,6 @@
 ---
 name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code
+description: Use when implementing or changing logic, state, reusable behavior, or shared contracts with meaningful programmatic reproduction; not for pure styling, layout, copy, or static markup edits
 ---
 
 # Test-Driven Development (TDD)
@@ -16,10 +16,18 @@ Write the test first. Watch it fail. Write minimal code to pass.
 ## When to Use
 
 **Always:**
-- New features
-- Bug fixes
-- Refactoring
-- Behavior changes
+- New logic or branches
+- State transitions or loading/error behavior
+- Data transformations or validation rules
+- Reusable component or shared utility behavior
+- Backend or API contract changes
+- Deterministic bug fixes with meaningful regression risk
+
+**Do NOT use for:**
+- Pure styling or layout fixes
+- Copy-only or icon-only changes
+- Static HTML/markup edits with no logic or semantic/accessibility impact
+- Cases where the only practical test would lock in incidental class strings or DOM structure
 
 **Exceptions (ask your human partner):**
 - Throwaway prototypes
@@ -27,6 +35,7 @@ Write the test first. Watch it fail. Write minimal code to pass.
 - Configuration files
 
 Thinking "skip TDD just this once"? Stop. That's rationalization.
+If this is purely static presentational work, this skill is the wrong tool — use root-cause investigation and proportional verification instead.
 
 ## The Iron Law
 

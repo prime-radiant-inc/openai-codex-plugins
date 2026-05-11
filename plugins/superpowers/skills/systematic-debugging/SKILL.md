@@ -1,6 +1,6 @@
 ---
 name: systematic-debugging
-description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+description: Use when diagnosing bugs, test failures, or unexpected behavior that require root-cause investigation; for purely static presentational issues, keep verification proportional and do not automatically escalate to TDD
 ---
 
 # Systematic Debugging
@@ -42,6 +42,8 @@ Use for ANY technical issue:
 - Issue seems simple (simple bugs have root causes too)
 - You're in a hurry (rushing guarantees rework)
 - Manager wants it fixed NOW (systematic is faster than thrashing)
+
+For purely static presentational or layout defects, keep the investigation proportional: do Phase 1 properly, fix the root cause locally, and use the lightest verification that meaningfully checks the outcome. Do not automatically escalate to TDD unless shared behavior or reusable logic is involved.
 
 ## The Four Phases
 
@@ -171,12 +173,13 @@ You MUST complete each phase before proceeding to the next.
 
 **Fix the root cause, not the symptom:**
 
-1. **Create Failing Test Case**
-   - Simplest possible reproduction
-   - Automated test if possible
-   - One-off test script if no framework
-   - MUST have before fixing
-   - Use the `superpowers:test-driven-development` skill for writing proper failing tests
+1. **Choose the Right Reproduction / Verification**
+   - Use the simplest reproduction that meaningfully protects the bug
+   - Prefer an automated failing test when the behavior can be exercised programmatically and the test protects real behavior or a shared contract
+   - Use an existing UI or component harness when it is already available and stable
+   - Manual verification is acceptable for purely static presentational defects
+   - Do not create brittle implementation-detail tests just to satisfy ceremony
+   - Use the `superpowers:test-driven-development` skill when this bug materially changes behavior and belongs in automated tests
 
 2. **Implement Single Fix**
    - Address the root cause identified
@@ -218,7 +221,7 @@ If you catch yourself thinking:
 - "Quick fix for now, investigate later"
 - "Just try changing X and see if it works"
 - "Add multiple changes, run tests"
-- "Skip the test, I'll manually verify"
+- "Skip meaningful verification, I'll eyeball it later"
 - "It's probably X, let me fix that"
 - "I don't fully understand but this might work"
 - "Pattern says X but I'll adapt it differently"
