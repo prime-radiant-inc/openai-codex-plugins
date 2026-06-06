@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: openai-codex-plugins
+  description: "Curated collection of OpenAI Codex plugin examples (fork for upstream submission)."
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    prime-radiant.com/repo-map-rev: "215630567e00081f4bbf4251532c8f9a046369ad"
+  tags: [codex, openai, mcp, plugins, python]
+spec:
+  type: tool
+  lifecycle: experimental
+  owner: user:cching-openai
+  system: plugins
