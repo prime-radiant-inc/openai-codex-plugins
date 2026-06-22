@@ -1,0 +1,37 @@
+{
+  "feature": "{Feature Name}",
+  "created": "YYYY-MM-DD",
+  "designPath": "docs/design/YYYY-MM-DD-{feature-name}/design.md",
+  "specPath": "docs/specs/YYYY-MM-DD-{feature-name}",
+  "requirementsPath": "docs/specs/YYYY-MM-DD-{feature-name}/requirements.md",
+  "actionRequiredPath": "docs/specs/YYYY-MM-DD-{feature-name}/action-required.md",
+  "implementationLogPath": "docs/specs/YYYY-MM-DD-{feature-name}/implementation-log.md",
+  "allowedTaskStatuses": [
+    "pending",
+    "in-progress",
+    "blocked",
+    "needs-context",
+    "done-with-concerns",
+    "review-failed",
+    "complete"
+  ],
+  "tasks": [
+    {
+      "id": "task-01-{name}",
+      "title": "{Task Title}",
+      "file": "tasks/task-01-{name}.md",
+      "phase": 1,
+      "status": "pending",
+      "dependsOn": [],
+      "blocks": ["task-02-{name}"],
+      "files": {
+        "create": ["path/to/new-file.ts"],
+        "modify": ["path/to/existing-file.ts"]
+      },
+      "verificationCommands": [
+        "{targeted command for this task}",
+        "{project-level verification command}"
+      ]
+    }
+  ]
+}
