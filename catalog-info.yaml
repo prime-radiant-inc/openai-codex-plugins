@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: openai-codex-plugins
+  description: Fork of openai/plugins — a curated collection of OpenAI Codex plugin examples, each with a .codex-plugin manifest — used to prepare upstream submissions.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    prime-radiant.com/repo-map-rev: "2611465e5b11a880de4e53d4fed0f02dbd43fe44"
+  tags: [markdown, codex-plugins]
+  links:
+    - { url: "https://github.com/openai/plugins", title: "Upstream openai/plugins" }
+spec:
+  type: library
+  lifecycle: experimental
+  owner: user:cching-openai
+  system: plugins
