@@ -1,0 +1,51 @@
+{
+  "name": "s-kit",
+  "version": "1.0.1",
+  "description": "Agent workflow kit for brainstorming, domain-doc grilling, dated specs, implementation Phases, TDD, debugging, review, and delivery.",
+  "author": {
+    "name": "J03Fr0st",
+    "url": "https://github.com/J03Fr0st/s-kit"
+  },
+  "homepage": "https://github.com/J03Fr0st/s-kit",
+  "repository": "https://github.com/J03Fr0st/s-kit",
+  "license": "MIT",
+  "keywords": [
+    "brainstorming",
+    "grill-me",
+    "grill-with-docs",
+    "plan-feature",
+    "build-feature",
+    "domain-docs",
+    "adr",
+    "skills",
+    "tdd",
+    "debugging",
+    "code-review",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "s-kit",
+    "shortDescription": "Brainstorming, domain docs, dated specs, implementation Phases, and review workflows",
+    "longDescription": "Use s-kit to guide agent work through brainstorming, domain language and ADR stress-testing, dated feature specs, Phase-based implementation, test-driven development, systematic debugging, verification, code review, and branch finishing workflows.",
+    "developerName": "J03Fr0st",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "I've got an idea for something I'd like to build.",
+      "Let's add a feature to this project."
+    ],
+    "websiteURL": "https://github.com/J03Fr0st/s-kit",
+    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "brandColor": "#14B8A6",
+    "composerIcon": "./assets/s-kit-small.svg",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  }
+}

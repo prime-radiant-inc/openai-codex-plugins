@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="s-kit-owned-mark-v1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">s-kit mark</title>
+  <desc id="desc">A compact S-shaped workflow mark made from bracket rails, a diagonal build path, and two spec nodes.</desc>
+  <defs>
+    <linearGradient id="railGradient" x1="92" y1="420" x2="420" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#123B4A"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="pathGradient" x1="142" y1="354" x2="370" y2="158" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M346 84h-99c-92 0-159 54-159 128 0 37 18 70 50 92" stroke="#F8FAFC" stroke-width="64"/>
+    <path d="M166 428h99c92 0 159-54 159-128 0-37-18-70-50-92" stroke="#F8FAFC" stroke-width="64"/>
+    <path d="M158 330c35-55 80-82 135-82 36 0 60-13 77-40" stroke="#F8FAFC" stroke-width="70"/>
+    <path d="M346 84h-99c-92 0-159 54-159 128 0 37 18 70 50 92" stroke="url(#railGradient)" stroke-width="42"/>
+    <path d="M166 428h99c92 0 159-54 159-128 0-37-18-70-50-92" stroke="url(#railGradient)" stroke-width="42"/>
+    <path d="M158 330c35-55 80-82 135-82 36 0 60-13 77-40" stroke="url(#pathGradient)" stroke-width="48"/>
+  </g>
+
+  <circle cx="180" cy="326" r="30" fill="#14B8A6" stroke="#F8FAFC" stroke-width="10"/>
+  <circle cx="332" cy="186" r="30" fill="#F59E0B" stroke="#F8FAFC" stroke-width="10"/>
+  <circle cx="256" cy="256" r="23" fill="#0F172A" stroke="#F8FAFC" stroke-width="8"/>
+</svg>
